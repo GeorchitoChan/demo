@@ -1,0 +1,27 @@
+# Archivos y directorios de configuración
+# config/database.php
+# config/security.php
+
+# Directorio de vendor
+vendor/
+
+# Archivos de cache y logs
+tmp/
+cache/
+logs/
+
+# Archivos de configuración de IDE
+.idea/
+.vscode/
+.phpstorm/
+
+# Archivos de configuración de Git
+.gitattributes
+.gitmodules
+
+# Archivos de backup
+*.bak
+*.backup
+
+# Archivos de dump de base de datos
+*.sql
