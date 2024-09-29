@@ -1,0 +1,32 @@
+- app: Carpeta principal del proyecto, contiene la lógica de negocio y las estructuras de datos.
+	- controllers: Carpeta de controladores (lógica de negocio)
+	- models: Carpeta de modelos (estructuras de datos) que representan la base de datos.
+	- views: Carpeta de vistas (plantillas HTML) que se utilizan para mostrar datos.
+	- helpers: Carpeta de funciones auxiliares, contiene funciones que se utilizan en todo el 	sistema.
+	- libs: Carpeta de librerías personalizadas, contiene librerías creadas para el proyecto.
+
+- config: Carpeta de configuración, contiene archivos que definen la configuración del sistema.
+	- database.php: Archivo de configuración de la base de datos
+	- general.php: Archivo de configuración general
+	- routes.php: Archivo de configuración de rutas
+
+- public: Carpeta pública, contiene el punto de entrada del sistema y recursos estáticos.
+	- index.php: Punto de entrada del sistema
+	- assets: Carpeta de recursos estáticos (imágenes, CSS, JS)
+		- images/
+		- css/
+		- js/
+	- uploads: Carpeta de archivos subidos por los usuarios
+
+- vendor: Carpeta de librerías de terceros, contiene librerías instaladas con Composer o manualmente.
+	- composer: Carpeta de librerías instaladas con Composer
+	- otros: Carpeta de librerías de terceros no instaladas con Composer
+
+NOTA: Para configurar Composer para que utilice la ruta vendor/composer, ejecuta el comando siguiente:
+	php composer.phar config vendor-dir vendor/composer
+
+Para utilizar las dependencias instaladas en tu proyecto, incluye el archivo autoload.php generado por Composer:
+	require_once _DIR_ . '/vendor/composer/autoload.php';
+
+
+
